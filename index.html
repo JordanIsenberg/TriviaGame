@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game: JS Assignment 2</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body id="begin-show">
+	<div id="starting-section">
+		<!-- Header Div -->
+		<div class="jumbotron text-center">
+			<h1>Trivia Game</h1>
+			<h2>By: Jordan Isenberg</h2>
+		</div>
+		<!-- Separate Div for Start Button -->
+		<div class="container-fluid text-center">
+			<!-- Button runs a timer that lasts 60 seconds, then it runs mySecondFunction, which shows the results of the quiz -->
+			<button class="button btn-lg btn-primary btn-center" id="starting-button" onclick="myFirstFunction() setTimeout(mySecondFunction, 60000);">Start Game</button>
+		</div>
+	</div>
+	<!-- Separate Div for In-Game Actions -->
+	<div class="container-fluid text-center hidden" id="in-game-section">
+		<h1>Answer as many questions as you can within the time.</h1>
+		<p id="timer"></p>
+		<!-- Trivia Form - Multiple Choice -->
+		<p>In 1952, a Cleveland disc jockey coined the term "rock and roll". Who was it?</p>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Dick Clark</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="1">Alan Freed</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Wolfman Jack</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Sam Calloway</label>
+		</div>
+		<br>
+		<p>Which native Clevelander was the first African American woman to be nominated for the Best Actress Academy Award?</p>
+		<div class="checkbox">
+			<label><input type="checkbox" value="1">Hattie McDaniel</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Dorothy Dandridge</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Lena Horne</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Eartha Kitt</label>
+		</div>
+		<br>
+		<p>Portions of the following movies were filmed in Cleveland, except...</p>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Christmas Story</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Air Force One</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="1">Ghostbusters</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">The Avengers</label>
+		</div>
+		<br>
+		<p>Which music group or artist does not hail from the Akron/Cleveland area?</p>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Nine Inch Nails</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="1">Bootsy Collins</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">Kid Cudi</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" value="0">The Black Keys</label>
+		</div>
+	</div>
+	<!-- End Game Statistics -->
+	<div class="container-fluid text-center hidden" id="end-game-section">
+		<h1>End Game Statistics</h1>
+		<p id="correct-answers">Correct Answers: </p>
+		<p id="wrong-answers">Wrong Answers: </p>
+	</div>
+</body>
+</html>
