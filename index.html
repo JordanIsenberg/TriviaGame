@@ -17,7 +17,7 @@
 		<!-- Separate Div for Start Button -->
 		<div class="container-fluid text-center">
 			<!-- Button runs a timer that lasts 60 seconds, then it runs mySecondFunction, which shows the results of the quiz -->
-			<button class="button btn-lg btn-primary btn-center" id="starting-button" onclick="myFirstFunction() setTimeout(mySecondFunction, 60000);">Start Game</button>
+			<button class="button btn-lg btn-primary btn-center" id="starting-button" onclick="myFirstFunction(); setTimeout(mySecondFunction, 60000);">Start Game</button>
 		</div>
 	</div>
 	<!-- Separate Div for In-Game Actions -->
@@ -87,5 +87,6 @@
 		<p id="correct-answers">Correct Answers: </p>
 		<p id="wrong-answers">Wrong Answers: </p>
 	</div>
+	<script src="assets/javascript/app.js"></script>
 </body>
 </html>
